@@ -1,0 +1,32 @@
+package mathsAssignment;
+import java.util.Scanner;
+public class Q2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+        int m, n, p;
+		
+		System.out.println("Pigeonhole Principle ");
+		System.out.println("______________________________________________________________________________");
+		System.out.println("|                    		    CASE 1                                    |");
+		System.out.println("|_____________________________________________________________________________|");
+		System.out.println("|There are 12 children in the family.                                         |");
+		System.out.println("|Prove that at least two of family members (including mother and father) are  |");
+		System.out.println("|born in the same month.                                                      |");
+		System.out.println("|_____________________________________________________________________________|");
+		
+		Scanner scan = new Scanner (System.in);
+		System.out.println("PIGEONHOLE FORMULA : [(n-1) / m] + 1");
+		System.out.println("Identify the pigeonhole (m) :");
+		m = scan.nextInt();
+		System.out.println("Identify the pigeons (n) :");
+		n = scan.nextInt();
+		p = ((n-1) / m) + 1;
+		System.out.printf("Solution after calculate in the PIGEONHOLE FORMULA : [(n-1) / m] + 1 = " +p);
+		System.out.println("");
+		System.out.println("Explanation:");
+		System.out.println("There are "+ n +" family members (pigeons) which we are placing into " +m +" months (pigeonholes), so by the PHP, some months has "+p+ " family members.");
+	}
+
+	}
